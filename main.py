@@ -7,6 +7,7 @@ import datetime
 import streamlit as st
 import google.generativeai as genai
 
+from dotenv import load_dotenv
 from google.cloud import discoveryengine_v1 as discoveryengine
 from google.cloud import storage
 from google.api_core.client_options import ClientOptions
@@ -18,11 +19,15 @@ from google.api_core.client_options import ClientOptions
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "chatbot.json"
 
-PROJECT_ID = "mini-project-454908"
-LOCATION = "global"
-DATA_STORE_ID = "mini-proj-atgeir_1743403050571"
-ENGINE_ID = "mini-proj-atgeir_1743403000829"
-GENAI_API_KEY = "AIzaSyBzNKFDGFaAq5n3shmKLN3eunoaV1Iiybw"
+
+load_dotenv()  # Load variables from .env file
+
+PROJECT_ID = os.getenv("PROJECT_ID")
+LOCATION = os.getenv("LOCATION")
+DATA_STORE_ID = os.getenv("DATA_STORE_ID")
+ENGINE_ID = os.getenv("ENGINE_ID")
+GENAI_API_KEY = os.getenv("GENAI_API_KEY")
+
 
 GREETINGS = ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"]
 GOODBYES = ["bye", "goodbye", "exit", "quit"]
