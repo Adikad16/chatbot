@@ -46,10 +46,10 @@ streamlit run ui.py
 
 Set the following in \`main.py\`:
 
-\PROJECT_ID = os.getenv("PROJECT_ID")
-LOCATION = os.getenv("LOCATION")
-DATA_STORE_ID = os.getenv("DATA_STORE_ID")
-ENGINE_ID = os.getenv("ENGINE_ID")\`
+\PROJECT_ID = os.getenv("PROJECT_ID")\
+\LOCATION = os.getenv("LOCATION")\
+\DATA_STORE_ID = os.getenv("DATA_STORE_ID")\
+\ENGINE_ID = os.getenv("ENGINE_ID")\`
 
 # 🙌 Credits {#credits}
 
