@@ -19,14 +19,14 @@ from google.api_core.client_options import ClientOptions
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "chatbot.json"
 
-
-load_dotenv()  # Load variables from .env file
+load_dotenv("main.env")  
 
 PROJECT_ID = os.getenv("PROJECT_ID")
 LOCATION = os.getenv("LOCATION")
 DATA_STORE_ID = os.getenv("DATA_STORE_ID")
 ENGINE_ID = os.getenv("ENGINE_ID")
 GENAI_API_KEY = os.getenv("GENAI_API_KEY")
+
 
 
 GREETINGS = ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"]
