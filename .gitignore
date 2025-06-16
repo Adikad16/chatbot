@@ -1,0 +1,7 @@
+main.env
+.env
+config.json
+secrets.yaml
+*.key
+*.pem
+__pycache__/
